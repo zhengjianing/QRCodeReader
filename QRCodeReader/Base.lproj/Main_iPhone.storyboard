@@ -45,13 +45,23 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <items>
                                     <barButtonItem width="90" id="xI2-gr-nlU"/>
-                                    <barButtonItem title="Start!" width="90" id="jKJ-f0-oWd"/>
+                                    <barButtonItem title="Start!" width="90" id="jKJ-f0-oWd">
+                                        <connections>
+                                            <action selector="startStopReading:" destination="vXZ-lx-hvc" id="7RX-E4-PG0"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="90" id="qjf-Co-VAG"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bbitemStart" destination="jKJ-f0-oWd" id="MgN-ak-Ddn"/>
+                        <outlet property="lblPrompt" destination="BJJ-dx-DNx" id="v3V-Fu-b5g"/>
+                        <outlet property="lblStatus" destination="4Eb-Uv-KuR" id="W8C-Xo-HZE"/>
+                        <outlet property="viewPreview" destination="DxL-1Y-5i4" id="QYm-28-4UJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
