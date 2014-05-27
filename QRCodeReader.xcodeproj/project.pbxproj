@@ -22,6 +22,7 @@
 		945E212C1934311B00BD6C79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945E210B1934311B00BD6C79 /* UIKit.framework */; };
 		945E21341934311B00BD6C79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945E21321934311B00BD6C79 /* InfoPlist.strings */; };
 		945E21361934311B00BD6C79 /* QRCodeReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E21351934311B00BD6C79 /* QRCodeReaderTests.m */; };
+		945E21401934763F00BD6C79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945E213F1934763F00BD6C79 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		945E21311934311B00BD6C79 /* QRCodeReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QRCodeReaderTests-Info.plist"; sourceTree = "<group>"; };
 		945E21331934311B00BD6C79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		945E21351934311B00BD6C79 /* QRCodeReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderTests.m; sourceTree = "<group>"; };
+		945E213F1934763F00BD6C79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945E21401934763F00BD6C79 /* AVFoundation.framework in Frameworks */,
 				945E210A1934311B00BD6C79 /* CoreGraphics.framework in Frameworks */,
 				945E210C1934311B00BD6C79 /* UIKit.framework in Frameworks */,
 				945E21081934311B00BD6C79 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		945E21061934311B00BD6C79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				945E213F1934763F00BD6C79 /* AVFoundation.framework */,
 				945E21071934311B00BD6C79 /* Foundation.framework */,
 				945E21091934311B00BD6C79 /* CoreGraphics.framework */,
 				945E210B1934311B00BD6C79 /* UIKit.framework */,
