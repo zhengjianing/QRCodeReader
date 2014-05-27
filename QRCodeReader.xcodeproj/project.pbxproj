@@ -23,6 +23,7 @@
 		945E21341934311B00BD6C79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945E21321934311B00BD6C79 /* InfoPlist.strings */; };
 		945E21361934311B00BD6C79 /* QRCodeReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E21351934311B00BD6C79 /* QRCodeReaderTests.m */; };
 		945E21401934763F00BD6C79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945E213F1934763F00BD6C79 /* AVFoundation.framework */; };
+		945E2142193491C400BD6C79 /* qr-coder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 945E2141193491C400BD6C79 /* qr-coder-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		945E21041934311B00BD6C79 /* QRCodeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		945E21041934311B00BD6C79 /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945E21071934311B00BD6C79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		945E21091934311B00BD6C79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		945E210B1934311B00BD6C79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -57,6 +58,7 @@
 		945E21331934311B00BD6C79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		945E21351934311B00BD6C79 /* QRCodeReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderTests.m; sourceTree = "<group>"; };
 		945E213F1934763F00BD6C79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		945E2141193491C400BD6C79 /* qr-coder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "qr-coder-icon.png"; path = "../../../../Desktop/qr-coder-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 		945E21051934311B00BD6C79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				945E21041934311B00BD6C79 /* QRCodeReader.app */,
+				945E21041934311B00BD6C79 /* QRCode.app */,
 				945E21281934311B00BD6C79 /* QRCodeReaderTests.xctest */,
 			);
 			name = Products;
@@ -133,6 +135,7 @@
 		945E210E1934311B00BD6C79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				945E2141193491C400BD6C79 /* qr-coder-icon.png */,
 				945E210F1934311B00BD6C79 /* QRCodeReader-Info.plist */,
 				945E21101934311B00BD6C79 /* InfoPlist.strings */,
 				945E21131934311B00BD6C79 /* main.m */,
@@ -176,7 +179,7 @@
 			);
 			name = QRCodeReader;
 			productName = QRCodeReader;
-			productReference = 945E21041934311B00BD6C79 /* QRCodeReader.app */;
+			productReference = 945E21041934311B00BD6C79 /* QRCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 		945E21271934311B00BD6C79 /* QRCodeReaderTests */ = {
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945E2142193491C400BD6C79 /* qr-coder-icon.png in Resources */,
 				945E211E1934311B00BD6C79 /* Main_iPad.storyboard in Resources */,
 				945E21231934311B00BD6C79 /* Images.xcassets in Resources */,
 				945E211B1934311B00BD6C79 /* Main_iPhone.storyboard in Resources */,
@@ -393,12 +397,12 @@
 		945E213A1934311B00BD6C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeReader/QRCodeReader-Prefix.pch";
 				INFOPLIST_FILE = "QRCodeReader/QRCodeReader-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QRCode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,12 +410,12 @@
 		945E213B1934311B00BD6C79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeReader/QRCodeReader-Prefix.pch";
 				INFOPLIST_FILE = "QRCodeReader/QRCodeReader-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QRCode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
