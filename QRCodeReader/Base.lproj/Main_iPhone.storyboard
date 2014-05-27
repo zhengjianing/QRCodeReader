@@ -45,7 +45,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <items>
                                     <barButtonItem width="90" id="xI2-gr-nlU"/>
-                                    <barButtonItem title="Start!" width="90" id="jKJ-f0-oWd">
+                                    <barButtonItem title="Start" width="90" id="jKJ-f0-oWd">
                                         <connections>
                                             <action selector="startStopReading:" destination="vXZ-lx-hvc" id="7RX-E4-PG0"/>
                                         </connections>
